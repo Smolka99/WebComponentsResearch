@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .product-detail {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: auto;
+        }
+        .product-detail img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product-info {
+            margin-top: 20px;
+        }
+        .product-parameters {
+            list-style: none;
+            padding: 0;
+        }
+        .product-parameters li {
+            border-bottom: 1px solid #eee;
+            padding: 8px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .buy-btn {
+            background-color: #4CAF50;
+        }
+        .design-btn {
+            background-color: #008CBA;
+        }
+        .editor-wrapper {
+            margin-top: 20px;
+        }
+    </style>
+    <!--add my components js-->
+    <script src="../my-components/dist/my-components.bundle.js"></script>
+</head>
+<body>
+<div class="product-detail">
+    <img src="https://via.placeholder.com/600x400" alt="Product Image">
+    <div class="product-info">
+        <h1>Product Name</h1>
+        <ul class="product-parameters">
+            <li>Parameter 1: Value</li>
+            <li>Parameter 2: Value</li>
+            <li>Parameter 3: Value</li>
+            <li>Parameter 4: Value</li>
+        </ul>
+        <button class="buy-btn">BUY</button>
+        <button class="design-btn">DESIGN</button>
+    </div>
+    <div class="editor-wrapper">
+        <my-editor-component></my-editor-component>
+    </div>
+</div>
+</body>
+</html>
